@@ -1,4 +1,18 @@
+# initializing the highest number as none to put the first number
+highest = None
 
-#user input number
+# User input 5 numbers
 for num in range(5):
     number = float(input(f"Enter number {num + 1}: "))
+    
+    # putting the first number as the highest number
+    if highest is None:
+        highest = number
+
+    # Comparing the current highest number to the other numbers
+    else:
+        if number > highest:
+            highest = number
+
+# Print the highest number
+print("Your highest number is:", highest)
