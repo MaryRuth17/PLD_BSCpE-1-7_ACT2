@@ -2,10 +2,14 @@
 highest = None
 
 # User input 5 numbers
-for num in range(5):
-    number = float(input(f"Enter number {num + 1}: "))
+num1 = int(input("Insert 1st number: "))
+num2 = int(input("Insert 2nd number: "))
+num3 = int(input("Insert 3rd number: "))
+num4 = int(input("Insert 4th number: "))
+num5 = int(input("Insert 5th number: "))
+
     
-    # putting the first number as the highest number
+    # putting the first number as the highest number (not working yet)
     if highest is None:
         highest = number
 
