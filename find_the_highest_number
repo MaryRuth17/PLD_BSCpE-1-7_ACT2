@@ -8,15 +8,19 @@ num3 = int(input("Insert 3rd number: "))
 num4 = int(input("Insert 4th number: "))
 num5 = int(input("Insert 5th number: "))
 
-    
-    # putting the first number as the highest number (not working yet)
-    if highest is None:
-        highest = number
+# Putting the first number as the highest number
+if highest is None:
+    highest = num1
 
-    # Comparing the current highest number to the other numbers
-    else:
-        if number > highest:
-            highest = number
+# Comparing the current highest number to the other numbers using only if
+if num2 > highest:
+    highest = num2
+if num3 > highest:
+    highest = num3
+if num4 > highest:
+    highest = num4
+if num5 > highest:
+    highest = num5
 
 # Print the highest number
 print("Your highest number is:", highest)
